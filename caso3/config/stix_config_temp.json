@@ -1,0 +1,8 @@
+{
+  "endpoint" : "https://otx.alienvault.com/taxii/discovery"
+,"type" : "DISCOVER"
+,"collection" : "user_AlienVault"
+,"table" : "threatintel"
+,"columnFamily" : "cf"
+,"allowedIndicatorTypes" : [ "domainname:FQDN", "address:IPV_4_ADDR", "address:E_MAIL", "address:MAC"  ]
+}

@@ -1,0 +1,17 @@
+{
+  "hdfs" : {
+    "index": "clf",
+    "batchSize": 1,
+    "enabled" : true
+  },
+  "elasticsearch" : {
+    "index": "clf",
+    "batchSize": 1,
+    "enabled" : true
+  },
+  "solr" : {
+    "index": "clf",
+    "batchSize": 1,
+    "enabled" : true
+  }
+}

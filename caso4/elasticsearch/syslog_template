@@ -1,0 +1,68 @@
+{
+  "template": "syslog_index*",
+    "mappings" : {
+      "syslog_doc" : {
+        "properties" : {
+          "action" : {
+          "type" : "string"
+          },
+          "enrichmentjoinbolt:joiner:ts" : {
+            "type" : "string"
+          },
+          "enrichmentsplitterbolt:splitter:begin:ts" : {
+            "type" : "string"
+          },
+          "enrichmentsplitterbolt:splitter:end:ts" : {
+            "type" : "string"
+          },
+          "guid" : {
+            "type" : "string"
+          },
+          "ip_src_addr" : {
+            "type" : "ip"
+          },
+          "ip_src_port" : {
+            "type" : "integer"
+          },
+          "original_string" : {
+            "type" : "string"
+          },
+          "protocol" : {
+            "type" : "string"
+          },
+          "source:type" : {
+            "type" : "string"
+          },
+          "syslog_facility" : {
+            "type" : "string"
+          },
+          "syslog_hostname" : {
+            "type" : "string"
+          },
+          "syslog_program" : {
+            "type" : "string"
+          },
+          "syslog_severity" : {
+            "type" : "string"
+          },
+          "threatinteljoinbolt:joiner:ts" : {
+            "type" : "string"
+          },
+          "threatintelsplitterbolt:splitter:begin:ts" : {
+            "type" : "string"
+          },
+          "threatintelsplitterbolt:splitter:end:ts" : {
+            "type" : "string"
+          },
+          "timestamp" : {
+            "type" : "date",
+	    "format": "epoch_millis"
+
+          },
+          "user" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+}

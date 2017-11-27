@@ -1,0 +1,114 @@
+{
+  "template": "clf_index*" ,
+    "mappings" : {
+      "clf_doc" : {
+        "properties" : {
+          "BASE10NUM" : {
+            "type" : "long"
+          },
+          "COMMONAPACHELOG" : {
+            "type" : "string"
+          },
+          "HOSTNAME" : {
+            "type" : "string"
+          },
+          "HOUR" : {
+            "type" : "long"
+          },
+          "INT" : {
+            "type" : "long"
+          },
+          "MINUTE" : {
+            "type" : "long"
+          },
+          "MONTH" : {
+            "type" : "string"
+          },
+          "MONTHDAY" : {
+            "type" : "long"
+          },
+          "QUOTEDSTRING" : {
+            "type" : "string"
+          },
+          "SECOND" : {
+            "type" : "long"
+          },
+          "TIME" : {
+            "type" : "string"
+          },
+          "USERNAME" : {
+            "type" : "string"
+          },
+          "YEAR" : {
+            "type" : "long"
+          },
+          "agent" : {
+            "type" : "string"
+          },
+          "auth" : {
+            "type" : "string"
+          },
+          "bytes" : {
+            "type" : "long"
+          },
+          "clf_timestamp" : {
+            "type" : "date",
+            "format": "epoch_millis"
+          },
+          "clientip" : {
+            "type" : "string"
+          },
+          "enrichmentjoinbolt:joiner:ts" : {
+            "type" : "string"
+          },
+          "enrichmentsplitterbolt:splitter:begin:ts" : {
+            "type" : "string"
+          },
+          "enrichmentsplitterbolt:splitter:end:ts" : {
+            "type" : "string"
+          },
+          "guid" : {
+            "type" : "string"
+          },
+          "httpversion" : {
+            "type" : "string"
+          },
+          "ident" : {
+            "type" : "string"
+          },
+          "original_string" : {
+            "type" : "string"
+          },
+          "referrer" : {
+            "type" : "string"
+          },
+          "request" : {
+            "type" : "string"
+          },
+          "response" : {
+            "type" : "long"
+          },
+          "source:type" : {
+            "type" : "string"
+          },
+          "threatinteljoinbolt:joiner:ts" : {
+            "type" : "string"
+          },
+          "threatintelsplitterbolt:splitter:begin:ts" : {
+            "type" : "string"
+          },
+          "threatintelsplitterbolt:splitter:end:ts" : {
+            "type" : "string"
+          },
+          "timestamp" : {
+            "type" : "date",
+            "format": "epoch_millis"
+	  },
+          "verb" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+
+}

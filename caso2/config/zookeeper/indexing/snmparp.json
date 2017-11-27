@@ -1,0 +1,12 @@
+{
+  "elasticsearch": {
+    "index": "snmparp",
+    "batchSize": 5,
+    "enabled" : false
+  },
+  "hdfs": {
+    "index": "snmparp",
+    "batchSize": 5,
+    "enabled" : true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parserClassName": "org.apache.metron.parsers.syslog.BasicSyslogParser",
+  "sensorTopic": "secure",
+  "parserConfig": {
+    "timestampField": "timestamp"
+  }
+}

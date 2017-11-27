@@ -1,0 +1,17 @@
+{
+  "hdfs" : {
+    "index": "syslog",
+    "batchSize": 1,
+    "enabled" : true
+  },
+  "elasticsearch" : {
+    "index": "syslog",
+    "batchSize": 1,
+    "enabled" : true
+  },
+  "solr" : {
+    "index": "syslog",
+    "batchSize": 1,
+    "enabled" : true
+  }
+}

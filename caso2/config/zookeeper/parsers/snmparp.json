@@ -1,0 +1,9 @@
+{
+  "parserClassName": "org.apache.metron.parsers.GrokParser",
+  "sensorTopic": "snmp",
+  "parserConfig": {
+    "grokPath": "/patterns/snmparp",
+    "patternLabel": "ARP_SNMP",
+    "timestampField": "timestamp"
+  }
+}

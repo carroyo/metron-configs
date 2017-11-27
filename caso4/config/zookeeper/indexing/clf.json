@@ -1,0 +1,11 @@
+{
+  "parserClassName": "org.apache.metron.parsers.GrokParser",
+  "sensorTopic": "clf",
+  "parserConfig": {
+    "grokPath": "/apps/metron/patterns/clf",
+    "patternLabel": "COMBINEDAPACHELOG",
+    "timestampField": "clf_timestamp",
+    "timeFields": ["clf_timestamp"],
+    "dateFormat":"dd/MMM/yyyy:HH:mm:ss Z"
+  }
+}
