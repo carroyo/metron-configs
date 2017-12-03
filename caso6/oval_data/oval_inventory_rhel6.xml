@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions
+	xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5"
+	xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd">
+
+	<generator>
+		<oval:product_name>CIS OVAL Repository</oval:product_name>
+		<oval:product_version>0.1</oval:product_version>
+		<oval:schema_version>5.10</oval:schema_version>
+		<oval:timestamp>2017-11-26T09:40:17</oval:timestamp>
+	</generator>
+		
+	<definitions>		<definition xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" class="inventory" id="oval:org.cisecurity:def:2434" version="6">
+		  <metadata>
+		    <title>Package samba 4.6.0 is installed</title>
+		    <affected family="unix">
+		      <platform>Red Hat Enterprise Linux 6</platform>
+		      <platform>Red Hat Enterprise Linux 7</platform>
+		    </affected>
+		    <description>Package samba 4.6.0 is installed.</description>
+		    <oval_repository>
+		      <dates>
+		        <submitted date="2017-06-02T13:10:26+00:00">
+		          <contributor organization="DTCC">Alexander Chua</contributor>
+		        </submitted>
+		        <status_change date="2017-06-09T12:00:00.000-05:00">DRAFT</status_change>
+		        <status_change date="2017-06-23T14:00:00.000-05:00">INTERIM</status_change>
+		        <status_change date="2017-07-07T14:00:00.000-05:00">ACCEPTED</status_change>
+		      </dates>
+		      <status>ACCEPTED</status>
+		      <min_schema_version>5.10</min_schema_version>
+		    </oval_repository>
+		  </metadata>
+		  <criteria>
+		    <criterion comment="Check if package samba 4.6.0 is installed" test_ref="oval:org.cisecurity:tst:3288" />
+		  </criteria>
+		</definition>
+		
+		<definition xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" class="inventory" id="oval:org.cisecurity:def:2435" version="6">
+		  <metadata>
+		    <title>Package samba 4.6.1 is installed</title>
+		    <affected family="unix">
+		      <platform>Red Hat Enterprise Linux 6</platform>
+		      <platform>Red Hat Enterprise Linux 7</platform>
+		    </affected>
+		    <description>Package samba 4.6.1 is installed.</description>
+		    <oval_repository>
+		      <dates>
+		        <submitted date="2017-06-02T13:10:26+00:00">
+		          <contributor organization="DTCC">Alexander Chua</contributor>
+		        </submitted>
+		        <status_change date="2017-06-09T12:00:00.000-05:00">DRAFT</status_change>
+		        <status_change date="2017-06-23T14:00:00.000-05:00">INTERIM</status_change>
+		        <status_change date="2017-07-07T14:00:00.000-05:00">ACCEPTED</status_change>
+		      </dates>
+		      <status>ACCEPTED</status>
+		      <min_schema_version>5.10</min_schema_version>
+		    </oval_repository>
+		  </metadata>
+		  <criteria>
+		    <criterion comment="Check if package samba 4.6.1 is installed" test_ref="oval:org.cisecurity:tst:3289" />
+		  </criteria>
+		</definition>
+		
+		<definition xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" class="inventory" id="oval:org.mitre.oval:def:20273" version="7">
+		  <metadata>
+		    <title>The operating system installed on the system is Red Hat Enterprise Linux 6</title>
+		    <affected family="unix">
+		      <platform>Red Hat Enterprise Linux 6</platform>
+		    </affected>
+		    <reference ref_id="cpe:/o:redhat:enterprise_linux:6" source="CPE" />
+		    <description>The operating system installed on the system is Red Hat Enterprise Linux 6.</description>
+		    <oval_repository>
+		      <dates>
+		        <submitted date="2013-12-09T13:03:37">
+		          <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+		        </submitted>
+		        <status_change date="2013-12-10T12:34:55.121-05:00">DRAFT</status_change>
+		        <modified comment="EDITED oval:org.mitre.oval:obj:28686 - modified object oval:org.mitre.oval:obj:28686. regex was added to make the inventory more general." date="2013-12-13T11:11:00.085-05:00">
+		          <contributor organization="ALTX-SOFT">Maria Kedovskaya</contributor>
+		        </modified>
+		        <status_change date="2013-12-30T04:00:35.434-05:00">INTERIM</status_change>
+		        <status_change date="2014-01-20T04:00:35.410-05:00">ACCEPTED</status_change>
+		        <modified comment="EDITED oval:org.mitre.oval:def:20273 - new criterion was added to avoid operation in Oracle Linux system" date="2014-05-08T11:04:00.653-04:00">
+		          <contributor organization="ALTX-SOFT">Maria Mikhno</contributor>
+		        </modified>
+		        <status_change date="2014-05-08T11:06:06.167-04:00">INTERIM</status_change>
+		        <status_change date="2014-05-26T04:00:11.457-04:00">ACCEPTED</status_change>
+		      </dates>
+		      <status>ACCEPTED</status>
+		      <min_schema_version>5.10</min_schema_version>
+		    </oval_repository>
+		  </metadata>
+		  <criteria>
+		    <criterion comment="Red Hat Enterprise 6 is installed" test_ref="oval:org.mitre.oval:tst:88889" />
+		    <criterion comment="Oracle Linux 6.x is installed" negate="true" test_ref="oval:org.mitre.oval:tst:80772" />
+		  </criteria>
+		</definition>
+		
+		<definition xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" class="inventory" id="oval:org.cisecurity:def:2436" version="6">
+		  <metadata>
+		    <title>Package samba 4.6.3 is installed</title>
+		    <affected family="unix">
+		      <platform>Red Hat Enterprise Linux 6</platform>
+		      <platform>Red Hat Enterprise Linux 7</platform>
+		    </affected>
+		    <description>Package samba 4.6.3 is installed.</description>
+		    <oval_repository>
+		      <dates>
+		        <submitted date="2017-06-02T13:10:26+00:00">
+		          <contributor organization="DTCC">Alexander Chua</contributor>
+		        </submitted>
+		        <status_change date="2017-06-09T12:00:00.000-05:00">DRAFT</status_change>
+		        <status_change date="2017-06-23T14:00:00.000-05:00">INTERIM</status_change>
+		        <status_change date="2017-07-07T14:00:00.000-05:00">ACCEPTED</status_change>
+		      </dates>
+		      <status>ACCEPTED</status>
+		      <min_schema_version>5.10</min_schema_version>
+		    </oval_repository>
+		  </metadata>
+		  <criteria>
+		    <criterion comment="Check if package samba 4.6.3 is installed" test_ref="oval:org.cisecurity:tst:3287" />
+		  </criteria>
+		</definition>
+		
+		<definition xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" class="inventory" id="oval:org.cisecurity:def:2433" version="6">
+		  <metadata>
+		    <title>Package samba 4.6.2 is installed</title>
+		    <affected family="unix">
+		      <platform>Red Hat Enterprise Linux 6</platform>
+		      <platform>Red Hat Enterprise Linux 7</platform>
+		    </affected>
+		    <description>Package samba 4.6.2 is installed.</description>
+		    <oval_repository>
+		      <dates>
+		        <submitted date="2017-06-02T13:10:26+00:00">
+		          <contributor organization="DTCC">Alexander Chua</contributor>
+		        </submitted>
+		        <status_change date="2017-06-09T12:00:00.000-05:00">DRAFT</status_change>
+		        <status_change date="2017-06-23T14:00:00.000-05:00">INTERIM</status_change>
+		        <status_change date="2017-07-07T14:00:00.000-05:00">ACCEPTED</status_change>
+		      </dates>
+		      <status>ACCEPTED</status>
+		      <min_schema_version>5.10</min_schema_version>
+		    </oval_repository>
+		  </metadata>
+		  <criteria>
+		    <criterion comment="Check if package samba 4.6.2 is installed" test_ref="oval:org.cisecurity:tst:3286" />
+		  </criteria>
+		</definition>
+		
+	</definitions>
+
+	<tests>		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Check if package samba 4.6.0 is installed" id="oval:org.cisecurity:tst:3288" version="1">
+		  <object object_ref="oval:org.cisecurity:obj:694" />
+		  <state state_ref="oval:org.cisecurity:ste:2440" />
+		</rpminfo_test>
+		
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Check if package samba 4.6.3 is installed" id="oval:org.cisecurity:tst:3287" version="1">
+		  <object object_ref="oval:org.cisecurity:obj:694" />
+		  <state state_ref="oval:org.cisecurity:ste:2441" />
+		</rpminfo_test>
+		
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Check if package samba 4.6.1 is installed" id="oval:org.cisecurity:tst:3289" version="1">
+		  <object object_ref="oval:org.cisecurity:obj:694" />
+		  <state state_ref="oval:org.cisecurity:ste:2443" />
+		</rpminfo_test>
+		
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Check if package samba 4.6.2 is installed" id="oval:org.cisecurity:tst:3286" version="1">
+		  <object object_ref="oval:org.cisecurity:obj:694" />
+		  <state state_ref="oval:org.cisecurity:ste:2442" />
+		</rpminfo_test>
+		
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Oracle Linux 6.x is installed" id="oval:org.mitre.oval:tst:80772" version="2">
+		  <object object_ref="oval:org.mitre.oval:obj:23691" />
+		  <state state_ref="oval:org.mitre.oval:ste:20228" />
+		</rpminfo_test>
+		
+		<rpminfo_test xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" check="at least one" check_existence="at_least_one_exists" comment="Red Hat Enterprise 6 is installed" id="oval:org.mitre.oval:tst:88889" version="2">
+		  <object object_ref="oval:org.mitre.oval:obj:28686" />
+		  <state state_ref="oval:org.mitre.oval:ste:25172" />
+		</rpminfo_test>
+		
+	</tests>
+
+	<objects>		<rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="the rpm package redhat-release-.*" id="oval:org.mitre.oval:obj:28686" version="2">
+		  <name operation="pattern match">^redhat-release-.*$</name>
+		</rpminfo_object>
+		
+		<rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="Object holds samba" id="oval:org.cisecurity:obj:694" version="1">
+		  <name operation="pattern match">^[Ss]amba$</name>
+		</rpminfo_object>
+		
+		<rpminfo_object xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" id="oval:org.mitre.oval:obj:23691" version="2">
+		  <name>oraclelinux-release</name>
+		</rpminfo_object>
+		
+	</objects>
+
+	<states>		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="State matches the version 4.6.1" id="oval:org.cisecurity:ste:2443" version="1">
+		  <version datatype="version">4.6.1</version>
+		</rpminfo_state>
+		
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="State matches the version 4.6.0" id="oval:org.cisecurity:ste:2440" version="1">
+		  <version datatype="version">4.6.0</version>
+		</rpminfo_state>
+		
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="State matches the version 4.6.2" id="oval:org.cisecurity:ste:2442" version="1">
+		  <version datatype="version">4.6.2</version>
+		</rpminfo_state>
+		
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="State matches the version 4.6.3" id="oval:org.cisecurity:ste:2441" version="1">
+		  <version datatype="version">4.6.3</version>
+		</rpminfo_state>
+		
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="version matches ^6.*$" id="oval:org.mitre.oval:ste:25172" version="1">
+		  <release operation="pattern match">^6.*$</release>
+		</rpminfo_state>
+		
+		<rpminfo_state xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" comment="version matches regex ^6.*$" id="oval:org.mitre.oval:ste:20228" version="1">
+		  <version operation="pattern match">^6.*$</version>
+		</rpminfo_state>
+		
+	</states>
+
+</oval_definitions>
